@@ -1,0 +1,101 @@
+<header class="header">
+    <div>
+        <span class="nav-bar">
+         <i data-feather="arrow-left" onclick="window.history.go(-1); return false;"></i>
+        </span>
+        <h1 class="title-color font-lg">By caaqil </h1>
+    </div>
+    <a href="/profile" class="ms-auto"> <img src="/assets/images/avtars/avtar.png" alt="avatar" /></a>
+</header>
+
+<br>
+<hr><br>
+<!-- Main Start -->
+<main class="main-wrap mb-xl-large about-us">
+    <!-- Banner Start -->
+    <div class="banner-box">
+        <div>
+            <img src="<%= data.urls.url %> " class="img-fluid abousimg" alt="about-us" />
+        </div>
+    </div>
+    <!-- Banner End -->
+
+    <!-- Who We Are Start -->
+    <section class="intro p-tb-md">
+        <h2 class="title-2"><%= data.title %> </h2>
+        <div class="card-box">
+            <ul>
+                <li>
+                    <span class="font-md"><i data-feather="database"></i>Size : <%= data.size %> </span>
+                    <div class="shape2 shape2-left">
+                        <span class="circle">&nbsp;</span>
+                        <span class="line"></span>
+                        <span class="circle">&nbsp;</span>
+                    </div>
+                    <div class="shape2 shape2-right">
+                        <span class="circle">&nbsp;</span>
+                        <span class="line"></span>
+                        <span class="circle">&nbsp;</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="font-md"><i data-feather="clock"></i>Uploaded : <%= data.upload %> </span>
+                    <div class="shape2 shape2-left">
+                        <span class="circle">&nbsp;</span>
+                        <span class="line"></span>
+                        <span class="circle">&nbsp;</span>
+                    </div>
+                    <div class="shape2 shape2-right">
+                        <span class="circle">&nbsp;</span>
+                        <span class="line"></span>
+                        <span class="circle">&nbsp;</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="font-md"><i data-feather="type"></i>Type : <%= data.type %> </span>
+                    <div class="shape2 shape2-left">
+                        <span class="circle">&nbsp;</span>
+                        <span class="line"></span>
+                        <span class="circle">&nbsp;</span>
+                    </div>
+                    <div class="shape2 shape2-right">
+                        <span class="circle">&nbsp;</span>
+                        <span class="line"></span>
+                        <span class="circle">&nbsp;</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="font-md"><i data-feather="user"></i>By : <%= data.by %> </span>
+                    <div class="shape2 shape2-left">
+                        <span class="circle">&nbsp;</span>
+                        <span class="line"></span>
+                        <span class="circle">&nbsp;</span>
+                    </div>
+                    <div class="shape2 shape2-right">
+                        <span class="circle">&nbsp;</span>
+                        <span class="line"></span>
+                        <span class="circle">&nbsp;</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+       
+    </section>
+    <!-- Who We Are End -->
+    <section> <br>
+        <p class="content-color pera b">
+            <%= data.desc %> 
+        </p>
+    </section>
+    <section>
+        <!-- Thumbnail Slider Start -->
+        <div class="wrap p-tb-sm">
+            <center>
+             <a href="<%= data.download %>" class="btn btn-square">Download</a>
+            </center>
+        </div>
+        <!-- Thumbnail Slider End -->
+    </section>
+
+
+</main>

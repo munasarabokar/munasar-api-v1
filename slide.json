@@ -1,0 +1,18 @@
+[
+    {
+        "name" : "movie",
+        "url" : "https://cdn.thetealmango.com/wp-content/uploads/2022/06/box-office-top-gun-maverick-has-a-fair-second-week-still-has-a-shot-at-30-crores-lifetime-in-india-001.jpg"
+    },
+    {
+        "name":"tv shows",
+        "url": "https://images-na.ssl-images-amazon.com/images/I/91mzrMvWR5L._RI_.jpg"
+    },
+    {
+        "name":"apps",
+        "url": "https://www.iteewebee.com/storage/2021/05/microsoft-office-2016-professional-plus-iteewebee.jpg"
+    },
+    {
+        "name":"games",
+        "url": "https://i.ytimg.com/vi/h4JjFS7zmtg/maxresdefault.jpg"
+    }
+]

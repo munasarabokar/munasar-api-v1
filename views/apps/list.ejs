@@ -1,0 +1,111 @@
+
+    <!-- Header Start -->
+    <header class="header">
+        <div>
+             <span class="nav-bar">
+         <i data-feather="arrow-left" onclick="window.history.go(-1); return false;"></i>
+        </span>
+            <h1 class="title-color font-lg text-center"><%= title %> </h1>
+        </div>
+        <a href="/profile" class="ms-auto"> <img src="assets/images/avtars/avtar.png" alt="avatar" /></a>
+    </header>
+    <!-- Header End -->
+
+  
+    <!-- Sidebar End -->
+
+    <!-- Main Start -->
+    <main class="main-wrap mb-xl-large grocery-home">
+        <!-- Top Content Section Start -->
+        <% if (listing.page == 'yes') { %>
+            <section class="top-section " style="margin-top: 12px;">
+                <h2 class="title-2">Discover something new</h2>
+                <!-- Search Box Start -->
+                <div class="search-box">
+                    <i class="search" data-feather="search"></i>
+                <form action="/raadi" autocomplete="off" method="get">
+                    <input type="hidden" name="id" value="<%= id %>">
+                    <input class="form-control" type="search" name="raadi" placeholder="Search here..." />
+                </form>
+                </div>
+                <!-- Search Box End -->
+            </section> <hr>
+        <% } %>
+       
+        <section class="page-list-section pt-0" style="padding: 20px;">
+            <h4 class="title-2 font-md"><%= title %> </h4>
+           <% if (list.length > 0) { %>
+                <% list.forEach(e => { %>
+                <% if (e.title == "") { %>
+                <% } else { %>
+                <a href="/details/<%= e.link.substring(36 , 44) %>" class="media">
+                    <img src="https://avatars.dicebear.com/api/initials/<%= e.title %>.svg" alt="banner">
+                    <div class="media-body">
+                        <h5 class="font-sm title-color">
+                            <div class="b"> 
+                                  <%= e.title %> 
+                            </div>
+                          
+                        </h5>
+                       <span><%= e.size.substring(21 , 38) %>|<%= e.upload.substring(0, 20) %> </span>
+                    </div>
+                </a>
+                <% } %>
+                <% }) %>
+            <% } %>
+           
+
+
+        </section>
+
+        <section class="">
+            <hr>
+            <% if (listing.page == 'yes') { %>
+                <% if (paginations == '') { %>
+
+                 <% } else { %>
+                    <% if (pageNumbar == '1') { %>
+                        <center>
+                           <a href="/pages/<%= listing.act %>/<%= paginations %>/<%= id %>" class="btn btn-square">Next Page <%= paginations %></a> 
+                        </center>
+                    <% } else { %>
+                        <% var prev = pageNumbar - 1 %> 
+                       <% if (pageNumbar >= 10) { %>
+                        <center>
+                            <a href="/pages/<%= listing.act %>/<%= prev %>/<%= id %>" class="btn btn-square">Prev Page <%= prev %></a> 
+                         </center>
+                        <% } else { %>
+                            <center>
+                                <a href="/pages/<%= listing.act %>/<%= prev %>/<%= id %>" class="btn btn-square">Prev Page <%= prev %></a> 
+                                <a href="/pages/<%= listing.act %>/<%= paginations %>/<%= id %>" class="btn btn-square">Next Page <%= paginations %></a> 
+                                <a  class="btn btn-square">Current Page</a> 
+                             </center>
+                       <% } %>
+                    <% } %>
+                <% } %>
+            <% } %>
+            <hr>
+        </section>
+        
+    </main>
+   
+    <!-- Main End -->
+    <!-- Footer Start -->
+<footer class="footer-wrap">
+    <div class="footer">
+        <ul>
+            <%let c = 0 ; pages.forEach(e => { %>
+                <li>
+                    <a href="<% if (c == 0) { %>
+                     /
+                     <% } else { %>
+                      /page/<%= c+e.url %>
+                    <% } %>" class="footer-link <% if (listing.act == e.act) { %>
+                     active
+                    <% } %>"><i data-feather="<%= e.icon %>"></i> </a>
+                </li>
+            <% c++}) %>
+        </ul>
+    </div>
+</footer>
+    <!-- Action Language End -->

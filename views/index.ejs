@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+   <%- include('files/css')  %> 
+</head>
+<!-- Head End -->
+<style>
+div.b {
+    width: 220px; 
+    word-wrap: break-word;
+  }
+ </style>
+<!-- Body Start -->
+
+<body>
+    <!-- Loader Start -->
+     <%- include('apps/loader')  %> 
+    <!-- Loader End -->
+
+    <% if (routes == 'login') { %>
+     <%- include('apps/login')  %> 
+    <% } else if (routes == 'reg') { %>
+      <%- include('apps/reg')  %> 
+     <% } else if (routes == 'index') { %>
+      <%- include('apps/home')  %> 
+    <% } else if (routes == 'page') { %>
+      <%- include('apps/list')  %> 
+    <% } else if (routes == 'details') { %>
+      <%- include('apps/details')  %> 
+    <% } else if (routes == 'admin') { %>
+      <%- include('apps/admin')  %> 
+    <% } %>
+
+    <%- include('files/js')  %> 
+</body>
+<!-- Body End -->
+
+
+</html>

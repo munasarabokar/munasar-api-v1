@@ -1,0 +1,216 @@
+ <!-- Header Start -->
+ <header class="header">
+    <div>
+        <span class="nav-bar">
+            <i class="fi fi-rr-apps"></i>
+        </span>
+        <h1 class="title-color font-lg">Home</h1>
+    </div>
+    <a href="profile-setting.html" class="ms-auto"> <img src="assets/images/avtars/avtar.png" alt="avatar" /></a>
+</header>
+<!-- Header End -->
+
+<!-- Sidebar Start -->
+<aside>
+    <a href="javascript:void(0)" class="overlay-sidebar"></a>
+    <div class="header-sidebar">
+        <a href="javascript:void(0)" class="user-panel">
+            <img src="assets/images/avtars/avtar.png" class="img-fluid user-img" alt="">
+            <span><%= info.user_n %> </span>
+         </a>
+        <div class="sidebar-content">
+            <ul class="link-section">
+                <li>
+                    <a href="profile-setting.html">
+                        <div class="content toggle-sec w-100">
+                            <div class="w-100">
+                                <h4 class="mb-0 font-sm">
+                                    <span>
+                                    <svg class="bg-shape">
+                                        <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                                    </svg>
+                                    <i class="me-4" data-feather="settings"></i>
+                                    </span>Profile Setting
+                                </h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <% if (info.status == 'admin') { %>
+                    <li>
+                        <a href="/admin">
+                            <div class="content toggle-sec w-100">
+                                <div class="w-100">
+                                    <h4 class="mb-0 font-sm">
+                                        <span>
+                                        <svg class="bg-shape">
+                                            <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                                        </svg>
+                                        <i class="me-4" data-feather="edit"></i>
+                                        </span>Admin Pannel
+                                    </h4>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                <% } %>
+                <li>
+                    <a href="reset-password.html">
+                        <div class="content toggle-sec w-100">
+                            <div class="w-100">
+                                <h4 class="mb-0 font-sm">
+                                    <span>
+                                        <svg class="bg-shape">
+                                            <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                                        </svg>
+                                        <i class="me-4" data-feather="eye"></i>
+                                       </span>Change Password
+                                </h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/logout">
+                        <div class="content toggle-sec w-100">
+                            <div class="w-100">
+                                <h4 class="mb-0 font-sm">
+                                    <span>
+                                        <svg class="bg-shape">
+                                            <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                                        </svg>
+                                        <i class="me-4" data-feather="power"></i>
+                                        </span> Logout
+                                </h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</aside>
+<!-- Sidebar End -->
+
+<!-- Main Start -->
+<main class="main-wrap mb-xl-large grocery-home">
+    <!-- Top Content Section Start -->
+    <section>
+        <!-- Banner Slider Start -->
+        <div class="wrap p-t-sm">
+            <h2 class="title-2 m-b-title1">Top of the Week</h2>
+            <div class="product-banner-slider banner-slider ratio2_1">
+                <% slide.forEach(e => { %>
+                 <!-- Banner Start -->
+                <div class="banner-box">
+                    <div>
+                        <img src="<%= e.url %>" class="img-fluid bg-img"
+                            alt="banner" />
+                    </div>
+                </div>
+                <!-- Banner End -->
+                <% }) %>
+            </div>
+        </div>
+        <!-- Banner Section End -->>
+    </section>
+
+
+    <section class="Search">
+        <div class="categories ">
+            <div class="categories-slide">
+                <!-- Slide Start -->
+                <div>
+                    <div class="slide">
+                        <svg class="bg-shape">
+                            <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                        </svg>
+                        <a href="/page/7/topapps">
+                            <img src="assets/images/icon_02/web-d.svg" class="img-fluid" alt="note" />
+                            <h3>Top Apps</h3>
+                        </a>
+                        
+                    </div>
+                </div>
+                <!-- Slide End -->
+
+                <!-- Slide Start -->
+                <div>
+                    <div class="slide">
+                        <svg class="bg-shape">
+                            <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                        </svg>
+                        <a href="/page/5/topmovie">
+                        <img src="assets/images/icon_02/fig-d.svg" class="img-fluid" alt="note" />
+                        <h3>Top Movie</h3>
+                        </a>
+                    </div>
+                </div>
+                <!-- Slide End -->
+                <!-- Slide End -->
+            </div>
+        </div>
+    </section>
+    <section>
+       <hr>
+        <section class="Search">
+            <div class="categories ">
+                <div class="categories-slide">
+                    <!-- Slide End -->
+    
+                    <!-- Slide Start -->
+                    <div>
+                        <div class="slide">
+                            <svg class="bg-shape">
+                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                            </svg>
+                            <a href="/page/6/toptv">
+                            <img src="assets/images/icon_02/marketing.svg" class="img-fluid" alt="note" />
+                            <h3>Top Tv Shows</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Slide End -->
+    
+                    <!-- Slide Start -->
+                    <div>
+                        <div class="slide">
+                            <svg class="bg-shape">
+                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                            </svg>
+                            <a href="/page/8/topgames">
+                            <img src="assets/images/icon_02/web-d.svg" class="img-fluid" alt="note" />
+                            <h3>Top Games</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Slide End -->
+                    <!-- Slide Start -->
+                    <!-- Slide End -->
+                </div>
+            </div>
+        </section>
+
+</main>
+<!-- Main End -->
+
+
+<!-- Footer Start -->
+<footer class="footer-wrap">
+    <div class="footer">
+        <ul>
+            <%let c = 0 ; pages.forEach(e => { %>
+                <li>
+                    <a href="<% if (c == 0) { %>
+                     /
+                     <% } else { %>
+                      /page/<%= c+e.url %>
+                    <% } %>" class="footer-link <% if (active == e.act) { %>
+                     active
+                    <% } %>"><i data-feather="<%= e.icon %>"></i> </a>
+                </li>
+            <% c++}) %>
+        </ul>
+    </div>
+</footer>
+<!-- Footer End -->

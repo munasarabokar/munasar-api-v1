@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Home",
+        "url": "/",
+        "title": "Home",
+        "icon": "home",
+        "act":"home",
+        "api": "",
+        "page": "no",
+        "no":"1"
+    },
+    {
+        "name": "Movie",
+        "url": "/movie",
+        "title": "Latest Movies",
+        "icon": "film",
+        "act":"movie",
+        "api": "browse/201",
+        "page": "yes",
+        "no":"201"
+    },
+    {
+        "name": "Tv shows",
+        "url": "/tv",
+        "title": "Latest Tv Shows",
+        "icon": "tv",
+        "act":"tv",
+        "api": "browse/205",
+        "page": "yes",
+        "no":"205"
+    },
+    {
+        "name": "Apps",
+        "url": "/apps",
+        "title": "Latest Apps",
+        "icon": "chrome",
+        "act":"apps",
+        "api": "browse/301",
+        "page": "yes",
+        "no":"301"
+    },
+    {
+        "name": "Games",
+        "url": "/games",
+        "title": "Latest Games",
+        "icon": "box",
+        "act":"games",
+        "api": "browse/401",
+        "page": "yes",
+        "no":"401"
+    }  , 
+    {
+        "name": "Top Movie",
+        "url": "/topmovie",
+        "title": "Top 100 Movies Download",
+        "icon": "film",
+        "act":"topmovie",
+        "api": "top/201",
+        "page": "no",
+        "no":"201"
+    },
+    {
+        "name": "Top shows",
+        "url": "/toptv",
+        "title": "Top 100 Tv shows Download",
+        "icon": "tv",
+        "act":"toptv",
+        "api": "top/205",
+        "page": "no",
+        "no":"205"
+    },
+    {
+        "name": "Top Apps",
+        "url": "/topapps",
+        "title": "Top 100 Apps Download",
+        "icon": "chrome",
+        "act":"topapps",
+        "api": "top/301",
+        "page": "no",
+        "no":"301"
+    },
+    {
+        "name": "Top Games",
+        "url": "/topgames",
+        "title": "Top 100 Games Download",
+        "icon": "box",
+        "act":"topgames",
+        "api": "top/401",
+        "page": "no",
+        "no":"401"
+    }
+]

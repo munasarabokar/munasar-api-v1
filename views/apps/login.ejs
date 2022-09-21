@@ -1,0 +1,78 @@
+<!-- Header Start -->
+<header>
+    <div class="header-section login-page">
+        <div class="banner-box ratio-83">
+            <div>
+                <img src="/assets/images/png/bg2.png" class="bg-img header-bg img-fluid" alt="bg" />
+            </div>
+        </div>
+
+        <!-- Dote Shape Start -->
+        <div class="dote top">
+            <img src="/assets/svg/dotes.svg" class="img-fluid" alt="dotes" />
+        </div>
+        <!-- Dote Shape End -->
+
+        <!-- Round Shape Start -->
+        <div class="round-top">
+            <img src="/assets/svg/round.svg" class="img-fluid" alt="round" />
+        </div>
+        <!-- Round Shape End -->
+
+        <div class="banner-img">
+            <img src="/assets/svg/login.svg" alt="svg" />
+        </div>
+    </div>
+</header>
+<!-- Header End -->
+
+<!-- Main Start -->
+<main class="p-b-lg login-page main-wrap p-t-md">
+    <!-- Login Section Start -->
+    <section class="login-section">
+        <!-- Login Form Start -->
+        <form action="/log" method="post" autocomplete="off" class="custom-form">
+            <h1 class="font-xl">Login Account</h1>
+            <% if (flash.length > 0) { %>
+                <% if (flash == 'wrong') { %>
+                    <span class="font-md btn btn-square text-center"><i data-feather="delete"></i> This username or password is in correct</span>
+                <% } %>
+                <% } %>
+            <!-- Email Input start -->
+            <div class="input-box">
+                <input type="text" placeholder="username " name="user_n" required class="form-control" />
+                <i data-feather="users"></i>
+            </div>
+            <!-- Email Input End -->
+
+            <!-- Password Input start -->
+            <div class="input-box">
+                <input type="password" placeholder="***********" name="user_p" required class="form-control" />
+                <i data-feather="lock"></i>
+            </div>
+            <!-- Password Input End -->
+           
+            <button type="submit" class="btn btn-square">Sign in</button>
+            <span class="content-color font-sm d-block text-center">If you are new, <a href="/register"
+                    class="underline">Create Now </a></span>
+        </form>
+        <!-- Login Form End -->
+    </section>
+    <!-- Login Section End -->
+
+    <!-- Social Section Start -->
+    <!-- Social Section End -->
+
+    <!-- Dote Shape Start -->
+    <div class="dote dote-bottom">
+        <img src="/assets/svg/dotes.svg" class="img-fluid" alt="dotes" />
+    </div>
+    <!-- Dote Shape End -->
+
+    <!-- Round Shape Start -->
+    <div class="round-bottom">
+        <img src="/assets/svg/round.svg" class="img-fluid" alt="round" />
+    </div>
+    <!-- Round Shape End -->
+</main>
+<!-- Main End -->

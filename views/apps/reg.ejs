@@ -1,0 +1,86 @@
+<header>
+    <div class="header-section login-page">
+        <div class="banner-box ratio-83">
+            <div>
+                <img src="/assets/images/png/bg2.png" class="bg-img header-bg img-fluid" alt="bg" />
+            </div>
+        </div>
+
+        <!-- Dote Shape Start -->
+        <div class="dote top">
+            <img src="/assets/svg/dotes.svg" class="img-fluid" alt="dotes" />
+        </div>
+        <!-- Dote Shape End -->
+
+        <!-- Round Shape Start -->
+        <div class="round-top">
+            <img src="/assets/svg/round.svg" class="img-fluid" alt="round" />
+        </div>
+        <!-- Round Shape End -->
+
+        <div class="banner-img">
+            <img src="/assets/svg/login.svg" alt="svg" />
+        </div>
+    </div>
+</header>
+<!-- Header End -->
+
+<!-- Main Start -->
+<main class="p-b-lg login-page main-wrap p-t-md">
+    <section class="login-section">
+        <!-- Register Form Start -->
+        <form action="/reg" method="post" class="custom-form">
+            <h1 class="font-xl">Register Account</h1>
+            <% if (flash.length > 0) { %>
+            <% if (flash == 'already') { %>
+                <span class="font-md btn btn-square text-center"><i data-feather="delete"></i> This username is already registered</span>
+            <% } %>
+            <% } %>
+            <!-- Full Name Input start -->
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" name="full_n" required="" class="form-control">
+                <i data-feather="pen-tool"></i>
+            </div>
+             <!-- Phone  Input start -->
+             <div class="input-box">
+                <input type="number" placeholder="Phone number" name="phone_n" required="" class="form-control">
+                <i data-feather="phone-call"></i>
+            </div>
+            <!-- Phone Input End -->
+            <!-- username Input start -->
+            <div class="input-box">
+                <input type="text" placeholder="username" name="user_n" required="" class="form-control">
+                <i data-feather="users"></i>
+            </div>
+            <!-- username Input End -->
+
+            <!-- Password Input start -->
+            <div class="input-box">
+                <input type="password" placeholder="********" name="user_p" required="" class="form-control">
+                <i data-feather="lock"></i>
+            </div>
+            <!-- Password Input End -->
+
+            <button type="submit" class="btn btn-square">Sign Up</button>
+
+            <span class="content-color font-sm d-block text-center">Already have an Account? <a href="/login">
+                    Sign In </a></span>
+        </form>
+        <!-- Register Form End bug caadi ah waaye -->
+    </section>
+
+    <!-- Social Section Start -->
+    <!-- Social Section End -->
+
+    <!-- Dote Shape Start -->
+    <div class="dote dote-bottom">
+        <img src="/assets/svg/dotes.svg" class="img-fluid" alt="dotes" />
+    </div>
+    <!-- Dote Shape End -->
+
+    <!-- Round Shape Start -->
+    <div class="round-bottom">
+        <img src="/assets/svg/round.svg" class="img-fluid" alt="round" />
+    </div>
+    <!-- Round Shape End -->
+</main>
