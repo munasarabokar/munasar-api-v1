@@ -1,10 +1,37 @@
-{
-    "movie": {"url":1 }, 
-    "tv":  {"url":2 } , 
-    "apps" :  {"url":3 } , 
-    "gmaes":  {"url":4 } , 
-    "topmovie" :  {"url":5 } , 
-    "toptv":  {"url":6 } , 
-    "topapps":  {"url":7 } , 
-    "topgames":  {"url":8 }
-}
+[
+    {
+        "name": "Home",
+        "url": "/",
+        "title": "Home",
+        "icon": "home",
+        "act":"home"
+    },
+    {
+        "name": "Movie",
+        "url": "/movie",
+        "title": "Latest Movies",
+        "icon": "film",
+        "act":"movie"
+    },
+    {
+        "name": "Tv shows",
+        "url": "/tv",
+        "title": "Latest Tv Shows",
+        "icon": "tv",
+        "act":"tv"
+    },
+    {
+        "name": "Apps",
+        "url": "/apps",
+        "title": "Latest Apps",
+        "icon": "chrome",
+        "act":"apps"
+    },
+    {
+        "name": "Games",
+        "url": "/games",
+        "title": "Latest Games",
+        "icon": "box",
+        "act":"games"
+    } 
+]

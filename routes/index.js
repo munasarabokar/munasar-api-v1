@@ -25,7 +25,7 @@ router.get('/page/:url' , (req, res , next) =>{
 
 
    fs.readFile('check_pages.json' , (err, data) => {
-    if (err) throw err; 
+    if (err) throw err;
     let list = JSON.parse(data);
     let lists = list[checkingg]
     if(lists) {
@@ -113,6 +113,5 @@ router.get('/details/:link' , (req , res ) => {
      }
    })()
 })
-
 
 module.exports = router;

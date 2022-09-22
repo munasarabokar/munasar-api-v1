@@ -5,17 +5,20 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var session = require('express-session');
 var flash = require('connect-flash');
-var cors = require('cors')
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var cors = require ('cors');
 
 var app = express();
-
 var useragent = require('express-useragent');
+app.use(cors({
+  origin:['http://localhost:3000','http://127.0.0.1:3000'],
+  credentials:true
+}));
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-app.use(cors())
+
 app.use(useragent.express());
 app.use(logger('dev'));
 app.use(express.json());
